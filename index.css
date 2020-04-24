@@ -16,6 +16,7 @@
   width: 100%;
   height: 85px;
   padding: 0 2.5%;
+  z-index: 1;
 }
 
 .logo {
@@ -47,20 +48,34 @@
 }
 
 .intro {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
   
-  background: url('https://ygorlf.github.io/geekBOT/intro.jpg') no-repeat center;
+  background: url('./img/cover.jpg') no-repeat center;
   background-attachment: fixed;
+  background-size: cover;
+}
+
+.intro:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .title {
   width: 80%;
   color: #fff;
   font: 400 3.3rem 'Indie Flower', sans-serif;
+  z-index: 1;
 }
 
 .title span {
