@@ -37,6 +37,7 @@
 
     <div class="faq">
       <div class="question-container">
+        <span class="fa fa-plus-circle plus"></span>
         <span class="question">
           O que é Discord?
         </span>
@@ -47,6 +48,7 @@
       </div>
 
       <div class="question-container">
+        <span class="fa fa-plus-circle plus"></span>
         <span class="question">
           Qual o significado da palavra GEEK?
         </span>
@@ -57,6 +59,7 @@
       </div>
 
       <div class="question-container">
+        <span class="fa fa-plus-circle plus"></span>
         <span class="question">
           Quando o servidor foi criado?
         </span>
@@ -66,6 +69,7 @@
       </div>
 
       <div class="question-container">
+        <span class="fa fa-plus-circle plus"></span>
         <span class="question">
           Quem é o dono do servidor?
         </span>
@@ -75,6 +79,7 @@
       </div>
 
       <div class="question-container">
+        <span class="fa fa-plus-circle plus"></span>
         <span class="question">
           Ja foram hackeados?
         </span>
@@ -97,6 +102,22 @@
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
   <script>
     var scroll = new SmoothScroll('a[href*="#"]');
+
+    window.addEventListener('load', function() {
+      var buttons = document.querySelectorAll('.plus');
+
+      buttons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var answer = btn.parentElement.lastElementChild;
+
+          btn.classList.toggle('fa-plus-circle');
+          btn.classList.toggle('fa-minus-circle');
+
+          answer.classList.toggle('answer');
+          answer.classList.toggle('answer--is-visible');
+        });
+      });
+    });
   </script>
 </body>
 </html>

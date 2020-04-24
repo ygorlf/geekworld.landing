@@ -80,21 +80,32 @@
   font: 400 1.4rem 'Open Sans', sans-serif;
 }
 
+.faq {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .faq-title {
   text-align: center;
   color: #6699ff;
   font: 400 3.3rem 'Inconsolata', sans-serif;
 }
 
-.faq {
-  width: 70%;
-  margin: 0 auto;
-}
-
 .question-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   max-width: 766px;
   width: 100%;
   margin: 1.5rem auto;
+}
+
+.plus {
+  display: inline-block;
+  margin-right: .5rem;
+  cursor: pointer;
+  color: #6699ff;
+  font-size: 2.25rem;
 }
 
 .question {
@@ -103,15 +114,17 @@
   font: 400 2rem 'Indie Flower', sans-serif;
 }
 
-.question:before {
-  content: '#';
-  color: #6699ff;
-  font: 400 3rem 'Indie Flower', sans-serif;
-}
-
-.answer {
+.answer,
+.answer--is-visible {
+  display: none;
+  width: 100%;
+  margin-top: 1rem;
   color: #fff;
   font: 400 1rem 'Open Sans', sans-serif;
+}
+
+.answer--is-visible {
+  display: inline-block;
 }
 
 .contact {
