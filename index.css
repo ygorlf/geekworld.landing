@@ -66,7 +66,7 @@
 }
 
 .title {
-  width: 80%;
+  width: 60%;
   color: #fff;
   font: 400 3.3rem 'Indie Flower', sans-serif;
   z-index: 1;
@@ -134,6 +134,16 @@
 
 .answer--is-visible {
   display: inline-block;
+}
+
+.channel-link {
+  display: flex;
+  justify-content: center;
+  height: 55px;
+  margin-top: 5rem;
+
+  background: url('./img/channel.png') no-repeat center;
+  background-size: contain;
 }
 
 .contact {
