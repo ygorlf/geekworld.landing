@@ -19,15 +19,9 @@
   z-index: 1;
 }
 
-.logo {
-  color: #6699ff;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.logo span {
-  position: relative;
-  top: 10px;
-  color: #fff;
+.logo img {
+  width: 40px;
+  height: 40px;
 }
 
 .menu {
